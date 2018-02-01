@@ -5,7 +5,7 @@ import json
 import pathlib
 import subprocess
 import tempfile
-from unittest import TestCase, main
+from unittest import TestCase
 from apng import is_png, APNG
 
 class Main(TestCase):
@@ -68,4 +68,3 @@ class Functional(TestCase):
 						["pngcheck", filename],
 						cwd="build", shell=True, check=True)
 
-main()
